@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+        input[type="text"], input[type="number"], input[type="email"], input[type="tel"], input[type="submit"], input[type="radio"], input[type="checkbox"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group-inline {
+            display: flex;
+            align-items: center;
+        }
+        .form-group-inline label {
+            margin-right: 20px;
+        }
+        .form-group-inline input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Gym Registration Form</h1>
+
+        <!-- Gym Registration Form -->
+        <form action="#" method="POST">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="form-group">
+                <h3>Gender:</h3>
+                <div class="form-group-inline">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="Other" required>
+                </div>
+            </div>
+
+            <!-- Membership Type Selection -->
+            <div class="form-group">
+                <h3>Membership Type:</h3>
+                <div class="form-group-inline">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" id="monthly" name="membership" value="Monthly" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="quarterly">Quarterly</label>
+                    <input type="radio" id="quarterly" name="membership" value="Quarterly" required>
+                </div>
+                <div class="form-group-inline">
+                    <label for="yearly">Yearly</label>
+                    <input type="radio" id="yearly" name="membership" value="Yearly" required>
+                </div>
+            </div>
+
+            <!-- Workout Preferences -->
+            <div class="form-group">
+                <h3>Workout Preferences:</h3>
+                <div class="form-group-inline">
+                    <input type="checkbox" id="cardio" name="preferences" value="Cardio">
+                    <label for="cardio">Cardio</label>
+                </div>
+                <div class="form-group-inline">
+                    <input type="checkbox" id="strength-training" name="preferences" value="Strength Training">
+                    <label for="strength-training">Strength Training</label>
+                </div>
+                <div class="form-group-inline">
+                    <input type="checkbox" id="yoga" name="preferences" value="Yoga">
+                    <label for="yoga">Yoga</label>
+                </div>
+                <div class="form-group-inline">
+                    <input type="checkbox" id="swimming" name="preferences" value="Swimming">
+                    <label for="swimming">Swimming</label>
+                </div>
+                <div class="form-group-inline">
+                    <input type="checkbox" id="group-classes" name="preferences" value="Group Classes">
+                    <label for="group-classes">Group Classes</label>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="form-group">
+                <label for="emergency-name">Emergency Contact Name:</label>
+                <input type="text" id="emergency-name" name="emergency-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergency-phone">Emergency Contact Phone Number:</label>
+                <input type="tel" id="emergency-phone" name="emergency-phone" required>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" class="submit-btn" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
